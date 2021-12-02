@@ -1,0 +1,23 @@
+Indicator_ID,Indicator_Type,Indicator_Desc
+0,Not Available,Not Available
+1,Literacy Rate 15 Plus,Literacy Rate 15 Plus
+2,Adult Literacy Rate,Adult Literacy Rate
+3,Attendance Rate - Primary,Attendance Rate - Primary
+4,Attendance Rate - Lower Secondary,Attendance Rate - Lower Secondary
+5,Attendance Rate - Upper Secondary,Attendance Rate - Upper Secondary
+6,Completion Rate - Primary,Completion Rate - Primary
+7,Completion Rate - Lower Secondary,Completion Rate - Lower Secondary
+8,Completion Rate - Upper Secondary,Completion Rate - Upper Secondary
+9,Out Of School Rate - Primary,Out Of School Rate - Primary
+10,Out Of School Rate - Lower Secondary,Out Of School Rate - Lower Secondary
+11,Out Of School Rate - Upper Secondary,Out Of School Rate - Upper Secondary
+12,Digital Age Connectivity Rate - Primary,Digital Age Connectivity Rate - Primary
+13,Digital Age Connectivity Rate - Lower Secondary,Digital Age Connectivity Rate - Lower Secondary
+14,Digital Age Connectivity Rate - Upper Secondary,Digital Age Connectivity Rate - Upper Secondary
+15,ICT Skills,ICT Skills
+16,WASH - Schools with no sanitation service,WASH - Schools with no sanitation service
+17,WASH - Schools with no hygiene service,WASH - Schools with no hygiene service
+18,WASH - Population practising open defecation,WASH - Population practising open defecation
+19,WASH - Schools with no drinking water service,WASH - Schools with no drinking water service
+20,Child deaths (aged 1-4 years),Child deaths (aged 1-4 years)
+21,Child deaths (aged 5-14 years),Child deaths (aged 5-14 years)
