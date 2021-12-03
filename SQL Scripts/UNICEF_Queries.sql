@@ -133,3 +133,15 @@ and "open1"."population_practising_open_defecation" != 0
 and "water"."schools_with_no_drinking_water_service" != 0
 order by "results"."country", "results"."year" desc;
 
+
+
+SELECT "Indicator_Dimension"."Indicator_Type","Location_Dimension"."CountryAndAreaName", "Year_Dimension"."Data_Year", SUM("Death_Mortality_WASH_Fact"."Obs_Value") AS Total_Data, 
+ GROUPING ("Indicator_Dimension"."Indicator_Type") as Indicator_Type_Rollup,
+        GROUPING ("Location_Dimension"."CountryAndAreaName") as CountryOrArea_Rollup, 
+        GROUPING ("Year_Dimension"."Data_Year") as Year_Rollup
+        from public."Death_Mortality_WASH_Fact" ,public."Location_Dimension",public."Indicator_Dimension",public."Year_Dimension"
+        where  "Death_Mortality_WASH_Fact"."Location_ID" = "Location_Dimension"."Location_ID"
+        and "Death_Mortality_WASH_Fact"."Year_ID" = "Year_Dimension"."Year_ID"
+        and "Death_Mortality_WASH_Fact"."Indicator_ID" = "Indicator_Dimension"."Indicator_ID"
+        and "Indicator_Dimension"."Indicator_Type" like '%Child%'
+        GROUP BY ROLLUP (public."Indicator_Dimension"."Indicator_Type",public."Location_Dimension"."CountryAndAreaName", public."Year_Dimension"."Data_Year")
